@@ -1,0 +1,17 @@
+.header{
+    text-decoration: none !important;
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3d3d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    border-bottom-style: none;
+}
+body{
+    background-color: #e0e0e0;
+}
