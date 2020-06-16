@@ -1,0 +1,10 @@
+table{
+    margin-top: 39px;
+}
+.tabla td {
+   font-style: normal;
+}
+.btn-orangeCuston{
+    background-color:  #ff6600;
+    color: white;
+}
