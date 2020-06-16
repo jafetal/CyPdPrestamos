@@ -1,1 +1,133 @@
-<p>limites works!</p>
+<div style="background-color: #ffffff;">
+    <table class="table tabla">
+        <thead class="seleccion">
+          <tr>
+            <th>Parámetros</th>
+            <th>Valores</th>
+            <th></th>
+            <th>Activar</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Requiere cuota de ahorro</td>
+            <td><div class="comboBox"></div></td>
+            <td></td>
+            <td>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="chkCuotaAhorro" >
+              </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Veces sueldo máximo</td>
+            <td>
+                <input type="text" class="comboBox" name="txtVecesSueldoMaximo" id="txtVecesSueldoMaximo">
+            </td>
+            <td>
+                <select class="comboBox" name="lstReferenciaVecesSueldo">
+                    <option value="" disabled selected>Selecciona</option>
+                    <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+                  </select>
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Monto</td>
+            <td>
+                <input type="text" class="comboBox" name="txtMontoMinimo">
+            </td>
+            <td>
+                <input type="text" class="comboBox" name="txtMontoMaximo">
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Porcentaje máximo a descontar</td>
+            <td>
+                <input type="text" class="comboBox" name="txtPorcentajeMaximoDescuento">
+            </td>
+            <td>
+                <select class="comboBox" name="lstReferenciaMaximoDescuento">
+                    <option value="" disabled selected>Selecciona</option>
+                    <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+                  </select>
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Plazo máximo</td>
+            <td>
+                <input type="text" class="comboBox" name="txtPlazoMaximo">
+            </td>
+            <td>
+                <select class="comboBox" name="lstPlazoMaximo">
+                    <option value="" disabled selected>Selecciona</option>
+                    <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+                  </select>
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Porcentaje máximo a comprometer en anualidades</td>
+            <td>
+                <input type="text" class="comboBox" name="txtPorcentajeMaximoAnualidad">
+            </td>
+            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="chkPorcentajeMaximoAnualidad">
+                </div>
+            </td>
+        </tr>
+
+        <tr class="filaFinal">
+            <td>Antigüedad como usuario ahorrador</td>
+            <td>
+                <input type="text" class="comboBox" name="txtAntiguedadSocioAhorrador">
+            </td>
+            <td>
+                <select class="comboBox" name="lstAntiguedadSocioAhorrador">
+                    <option value="" disabled selected>Selecciona</option>
+                    <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+                  </select>
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="chkAntiguedadSocioAhorrador">
+                </div>
+            </td>
+        </tr>
+
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-6" style="text-align: right;">
+          <button type="button" class="btn btn-grayCustom" name="btnCancelar">Cancelar</button>
+        </div>
+        <div class="col-6" style="text-align: left;">
+          <button type="button" class="btn btn-orangeCustom" name="btnGuardar">Guardar</button>
+        </div>
+      </div>
+</div>

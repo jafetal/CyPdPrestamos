@@ -3,7 +3,7 @@
         <div class="col-1 naranja">▶</div>
         <div class="col-10 titulo" titulo>Seleccione la función a configurar</div>
     </div>
-    <table class="table tabla">
+    <table class="table tabla table-striped">
         <thead class="seleccion">
           <tr>
             <th>Activar</th>
@@ -11,15 +11,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr routerLink="/cliente" routerLinkActive="celdaActiva">
             <td>
                 <div class="form-check centrar">
                     <input type="checkbox" class="form-check-input" id="clienteCheck">
                 </div>
             </td>
-            <td>Cliente</td>
+            <td><a>Cliente</a></td>
           </tr>
-          <tr style="background-color: #e7e7e7;">
+          <tr routerLink="/limites" routerLinkActive="celdaActiva">
             <td>
                 <div class="form-check centrar">
                     <input type="checkbox" class="form-check-input" id="limitesCheck">
@@ -27,7 +27,7 @@
             </td>
             <td>Límites</td>
           </tr>
-          <tr class="filaFinal">
+          <tr class="filaFinal" routerLink="/avales" routerLinkActive="celdaActiva">
             <td>
                 <div class="form-check centrar">
                     <input type="checkbox" class="form-check-input" id="avalesCheck">

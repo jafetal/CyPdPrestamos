@@ -27,3 +27,7 @@ hr {
     padding-left: 35px;
     padding-bottom: 20px;
 }
+.celdaActiva td{
+    background-color: #ff8d41;
+    color: #ffffff;
+}

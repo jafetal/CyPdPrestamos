@@ -12,89 +12,123 @@
         <tbody>
           <tr>
             <td>Alias</td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Selecciona</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
+            <td><select class="comboBox" name="lstAlias">
+                <option value="" disabled selected>Selecciona</option>
+                <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+                </select>
+            </td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" disabled >
+              </div>
+            </td>
           </tr>
           <tr>
             <td>Elemento de estructura</td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Selecciona</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
+            <td>
+              <select class="comboBox" name="lstElementoEstructura">
+                <option value="" disabled selected>Selecciona</option>
+                <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+              </select>
+            </td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="chkTodosElementos">
+                </div>
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled >
+                </div>
+            </td>
           </tr>
           <tr>
             <td>Tipo de pago de nómina</td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Selecciona</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
+            <td>
+              <select class="comboBox" name="lstTipoPagoNomina">
+                <option value="" disabled selected>Selecciona</option>
+                <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+              </select>
+            </td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="chkTodosPagoNomina">
+                </div>
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled>
+                </div>
+            </td>
           </tr>
           <tr>
             <td>Tipo de Trabajador</td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Selecciona</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
+            <td>
+              <select class="comboBox" name="lstTipoTrabajador">
+                <option value="" disabled selected>Selecciona</option>
+                <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+              </select>
+            </td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="chkTodosTipoTrabajador">
+                </div>
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled>
+                </div>
+            </td>
           </tr>
           <tr>
             <td>Antigüedad mínima en Cliente Institucional</td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected></option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected></option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
+            <td>
+              <input type="text" class="comboBox">
+            </td>
+            <td>
+              <select class="comboBox" name="lstAntiguedadMinimaCliente">
+                <option value="" disabled selected>Selecciona</option>
+                <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+              </select>
+            </td>
             <td></td>
-            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled >
+                </div>
+            </td>
           </tr>
           <tr class="filaFinal">
             <td>Antigüedad máxima en Cliente Institucional</td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected></option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
-            <td><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected></option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select></td>
+            <td>
+              <input type="text" class="comboBox">
+            </td>
+            <td>
+              <select class="comboBox" name="lstAntiguedadMaximaCliente">
+                <option value="" disabled selected>Selecciona</option>
+                <option [value]="item" *ngFor="let item of Alias">{{item}}</option>
+              </select>
+            </td>
             <td></td>
-            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled>
+                </div>
+            </td>
           </tr>
         </tbody>
       </table>
-      <div class="col-12" style="text-align: center;">
-        <button type="button" class="btn btn-orangeCuston">Continuar</button>
+      <div class="row">
+        <div class="col-6" style="text-align: right;">
+          <button type="button" class="btn btn-grayCustom" name="btnCancelar">Cancelar</button>
+        </div>
+        <div class="col-6" style="text-align: left;">
+          <button type="button" class="btn btn-orangeCustom" name="btnGuardar">Guardar</button>
+        </div>
       </div>
 </div>

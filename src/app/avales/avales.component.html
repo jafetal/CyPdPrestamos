@@ -1,1 +1,60 @@
-<p>avales works!</p>
+<div style="background-color: #ffffff;">
+    <table class="table tabla">
+        <thead class="seleccion">
+          <tr>
+            <th>Parámetros</th>
+            <th>Valores</th>
+            <th></th>
+            <th>Activar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cantidad de avales</td>
+            <td>
+                <input type="text" class="comboBox" name="txMinimoAvales" placeholder="Mínimo">
+            </td>
+            <td>
+                <input type="text" class="comboBox" name="txMaximoAvales" placeholder="Máximo">
+            </td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" disabled name="chkAvalesRequeridos">
+                </div>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Monto a partir del cual se requiere aval</td>
+            <td>
+                <input type="text" class="comboBox" name="txtMontoRequiereAval">
+            </td>
+            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="chkMontoRequiereAval">
+                </div>
+            </td>
+          </tr>
+
+          <tr class="filaFinal">
+            <td>Validar nivel de usuario</td>
+            <td></td>
+            <td></td>
+            <td>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="chkValidarNivelUsuario">
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-6" style="text-align: right;">
+          <button type="button" class="btn btn-grayCustom" name="btnCancelar">Cancelar</button>
+        </div>
+        <div class="col-6" style="text-align: left;">
+          <button type="button" class="btn btn-orangeCustom" name="btnGuardar">Guardar</button>
+        </div>
+      </div>
+</div>

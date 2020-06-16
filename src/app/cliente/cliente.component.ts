@@ -9,6 +9,7 @@ export class ClienteComponent implements OnInit {
 
   constructor() { }
 
+  Alias:string[] = ["elemento1","elemento2"];
   ngOnInit(): void {
   }
 
